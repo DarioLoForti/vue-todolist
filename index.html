@@ -30,7 +30,7 @@
                             <ul class="list-unstyled">
                                 <li class="m-4 py-4" v-for="(todo, index) in todo_list" :key="index" :class="todo.done ? 'text-decoration-line-through' : '' ">
                                     <div class="d-flex justify-content-between">   
-                                        <span>
+                                        <span @click="toggleDone(index)">
                                             {{todo.text}}
                                         </span>
                                         <div class="buttons">
