@@ -28,13 +28,13 @@
                     <div class="col-12">
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li class="m-4 b-bottom" v-for="(todo, index) in todo_list" :key="index" :class="todo.done ? 'text-decoration-line-through' : '' ">
+                                <li class="m-4 py-4" v-for="(todo, index) in todo_list" :key="index" :class="todo.done ? 'text-decoration-line-through' : '' ">
                                     <div class="d-flex justify-content-between">   
                                         <span>
                                             {{todo.text}}
                                         </span>
                                         <div class="buttons">
-                                            <button class="btn btn-sm btn-square" :class="todo.done ? 'btn-dark' : 'btn-primary'" @click="toggleDone(index)">
+                                            <button class="btn btn-sm btn-square" :class="todo.done ? 'btn-dark' : 'btn-success'" @click="toggleDone(index)">
                                                 <i class="fas" :class="todo.done ? 'fa-times' : 'fa-check'"></i>
                                             </button>
                                             <button class=" mx-3 btn btn-sm btn-square btn-danger" @click="deleteList">
@@ -55,7 +55,7 @@
                             <input class="form-control form-control-sm" v-model="inputText" type="text" placeholder="Inserisci nuovo impegno">
                         </div>
                         <div class="col-2 m-left">
-                            <button class="btn btn-sm btn-success" @click="addList">Aggiungi impegno</button>
+                            <button class="btn btn-sm btn-primary" @click="addList">Aggiungi impegno</button>
                         </div>
                     </div>
                 </div>

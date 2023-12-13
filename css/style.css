@@ -4,16 +4,21 @@
     box-sizing: border-box;
 }
 img{
-    width: 200px;
+    width: 300px;
+}
+h1{
+    font-size: 50px;
+    font-weight: bold;
 }
 
-
 .bg-green{
-    background-color: rgb(8, 51, 2);
+    background-color: rgb(34, 36, 33);
 }
 .content{
     max-width: 900px;
-    background-color: white;
+    background-image: url(../img/notebook-vuoto-con-righe-a-spirale-simulazione-realistica-modello-di-blocco-note-in-carta-bianca-con-rilegatura-a-filo-diario-a4-mockup-2h4j1xy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 40px auto;
     border: none;
     border-radius: 20px;
@@ -22,13 +27,13 @@ img{
     max-width: 900px;
     margin: 20px auto;
 }
-.b-bottom{
-    border-bottom: 1px solid rgb(8, 51, 2);
-    padding: 30px 0px;
-}
+
 li{
     font-size: 20px;
     font-weight:600;
+}
+span{
+    margin-left: 80px;
 }
 .m-left{
     margin-left: 30px;
