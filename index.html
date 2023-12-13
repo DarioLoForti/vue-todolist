@@ -23,7 +23,7 @@
             </div>
         </header>
         <main>
-            <div class="container bg-blue">
+            <div class="container bg-green">
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
@@ -40,11 +40,22 @@
                                             <button class=" mx-3 btn btn-sm btn-square btn-danger" @click="deleteList">
                                                 <i class="fas fa-trash"></i>
                                             </button>
-
                                         </div>
                                     </div>
                                 </li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container bg-green">
+                <div class="row">
+                    <div class="content-input d-flex ">
+                        <div class="col-10">
+                            <input class="form-control form-control-sm" v-model="inputText" type="text" placeholder="Inserisci nuovo impegno">
+                        </div>
+                        <div class="col-2 m-left">
+                            <button class="btn btn-sm btn-success" @click="addList">Aggiungi impegno</button>
                         </div>
                     </div>
                 </div>

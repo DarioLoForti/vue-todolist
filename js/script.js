@@ -5,6 +5,7 @@ createApp({
         return{
             logo: "https://hiringplatform.boolean.careers/images/logo.png",
             title: "Todo List",
+            inputText:"",
             todo_list: [
                 {
                     text: "Andare dal commercialista",
@@ -38,7 +39,17 @@ createApp({
 
         deleteList(index){
             this.todo_list.splice(index,1);
+        },
+
+        addList(){
+            let obj = {
+                text: this.inputText,
+                done: false
+            }
+
+            this.todo_list.push(obj);
+            this.inputText = "";
         }
-    },
+    }
 
 }).mount("#app");

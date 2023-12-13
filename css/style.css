@@ -8,15 +8,19 @@ img{
 }
 
 
-.bg-blue{
+.bg-green{
     background-color: rgb(8, 51, 2);
 }
 .content{
     max-width: 900px;
     background-color: white;
-    margin: 50px auto;
+    margin: 40px auto;
     border: none;
     border-radius: 20px;
+}
+.content-input{
+    max-width: 900px;
+    margin: 20px auto;
 }
 .b-bottom{
     border-bottom: 1px solid rgb(8, 51, 2);
@@ -25,4 +29,7 @@ img{
 li{
     font-size: 20px;
     font-weight:600;
+}
+.m-left{
+    margin-left: 30px;
 }
