@@ -38,6 +38,7 @@ createApp({
         },
 
         deleteList(index){
+            console.log(index);
             this.todo_list.splice(index,1);
         },
 

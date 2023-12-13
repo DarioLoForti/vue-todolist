@@ -37,7 +37,7 @@
                                             <button class="btn btn-sm btn-square" :class="todo.done ? 'btn-dark' : 'btn-success'" @click="toggleDone(index)">
                                                 <i class="fas" :class="todo.done ? 'fa-times' : 'fa-check'"></i>
                                             </button>
-                                            <button class=" mx-3 btn btn-sm btn-square btn-danger" @click="deleteList">
+                                            <button class=" mx-3 btn btn-sm btn-square btn-danger" @click="deleteList(index)">
                                                 <i class="fas fa-trash"></i>
                                             </button>
                                         </div>
