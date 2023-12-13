@@ -34,6 +34,10 @@ createApp({
     methods: {
         toggleDone(index){
             this.todo_list[index].done = !this.todo_list[index].done;
+        },
+
+        deleteList(index){
+            this.todo_list.splice(index,1);
         }
     },
 
