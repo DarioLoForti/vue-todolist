@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 200px;
+}
+
+
+.bg-blue{
+    background-color: rgb(8, 51, 2);
+}
+.content{
+    max-width: 900px;
+    background-color: white;
+    margin: 50px auto;
+    border: none;
+    border-radius: 20px;
+}
+.b-bottom{
+    border-bottom: 1px solid rgb(8, 51, 2);
+    padding: 30px 0px;
+}
+li{
+    font-size: 20px;
+    font-weight:600;
+}
