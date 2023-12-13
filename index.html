@@ -52,7 +52,7 @@
                 <div class="row">
                     <div class="content-input d-flex ">
                         <div class="col-10">
-                            <input class="form-control form-control-sm" v-model="inputText" type="text" placeholder="Inserisci nuovo impegno">
+                            <input class="form-control form-control-sm" v-model="inputText" type="text" placeholder="Inserisci nuovo impegno" @keyup.enter="addList">
                         </div>
                         <div class="col-2 m-left">
                             <button class="btn btn-sm btn-primary" @click="addList">Aggiungi impegno</button>
